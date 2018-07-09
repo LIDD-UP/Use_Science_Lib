@@ -1,0 +1,5 @@
+TypeError: list indices must be integers or slices, not tuple
+numpy的数的取法和list的取法有不同之处
+numpy支持两种方式的取数，第一种是array[1,2] =array[1][2]的；
+而对于list对象则是只接受interger或者是slice也就是整形和切片操作；
+
