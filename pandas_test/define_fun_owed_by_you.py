@@ -35,6 +35,16 @@ house_info = pd.read_csv('house_info.csv')
 #
 # column_null_count = house_info.apply(not_null_count)
 # print(column_null_count )
+
+column_null = pd.isnull(house_info['price'])
+print(column_null)
+null = house_info['price'][column_null]
+print(null)
+#这种过程的理解因该是，通过pd.isnull返回对应位置的true false 的列表，
+#然后再通过将true Flase 列表返回该列之中，通过对应true false 的值的下标，把空值再取出来
+#存入到一个新的列表之中；
+
+
 #
 
 # 通过apply可以定义很多操作
