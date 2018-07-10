@@ -1,1 +1,10 @@
 bar_heights = house_info.ix[0,num_cols].values
+
+
+
+# 指定亮度和饱和度
+# l:lightness
+#s 饱和度：saturation
+#调整饱和度有问题：ValueError: RGBA values should be within 0-1 range
+sns.palplot(sns.hls_palette(2,l=2,s=1))
+ValueError: RGBA values should be within 0-1 range
