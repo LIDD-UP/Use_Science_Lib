@@ -25,7 +25,7 @@ import numpy as np
 
 #切分数据：
 # split_a = np.ones((2,3))
-#
+
 # print(np.hsplit(split_a,3)) # 平均的分成几块
 # #还可以再某个地方指定切分；按行的
 # print(np.vsplit(split_a,(1,2))) # 也就是再第一行切一刀，再在第二行切一刀；
@@ -64,9 +64,11 @@ import numpy as np
 # 以上解决的是，对于变量赋值的时候如果要想两个变量的值初始值相等，但是后续的操作两个变量没有关系，则用copy反之则用=号
 
 
-np.argmax(axis=0) #返回列中最大值的下标0：按列进行找，1：按行进行找
-
-np.tile(a,(2,3))#将a矩阵的行变成原来的两倍，列变成原来的3倍；
+# np.argmax(axis=0) #返回列中最大值的下标0：按列进行找，1：按行进行找
+#
+# np.tile(a,(2,3))#将a矩阵的行变成原来的两倍，列变成原来的3倍；
 
 # np.sort(axis=1) 按行排序，0：按列排序；
 
+a = np.array([[1,2,3],[4,5,6]])
+print(np.argmax(a,axis=0))

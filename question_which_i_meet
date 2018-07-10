@@ -1,0 +1,1 @@
+bar_heights = house_info.ix[0,num_cols].values
